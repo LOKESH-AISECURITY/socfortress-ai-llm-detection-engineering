@@ -1,0 +1,16 @@
+flowchart TD
+    A["Authorized AI Security Test Scenarios"] --> B["AI Application / Model"]
+    B --> C["Application Audit Events"]
+    B --> D["Model and Policy Events"]
+    C --> E["Telemetry Collector"]
+    D --> E
+    E --> F["Schema Validation and Normalization"]
+    F --> G["Detection Rules and Correlation"]
+    G --> H["Wazuh / SIEM Alerts"]
+    H --> I["SOC Analyst Triage"]
+    I --> J["Investigation and Threat Mapping"]
+    J --> K["Incident Response Playbook"]
+    K --> L["Containment, Recovery and Retest"]
+    J --> M["Sanitized Evidence Store"]
+    L --> M
+    M --> N["Metrics and PDF Reports"]
